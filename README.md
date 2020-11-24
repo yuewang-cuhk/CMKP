@@ -47,7 +47,7 @@ CMKP/
 
 ```
 We store the running scripts in `sh/run_exp.py`, it will save the models in `sh/models` and predictions in `sh/pred`, and summarize the results into `sh/results`.\
-We provide a simpler model without using image attribute in `sh/sample_pred/joint_unified_model.ckpt` that achieves a F1 score of **47.13**, which is comparable to the best results in our paper. Its prediction is saved in `sh/sample_pred/best_pred.txt`.
+We provide a simpler model without using image attribute in `sh/sample_model/joint_unified_model.ckpt` (downloaded from [here](https://drive.google.com/file/d/1noVIsPkMp8lH_b86nW4oKpVjFJCHl1FV/view?usp=sharing))  that achieves a F1 score of **47.13**, which is comparable to the best results in our paper. Its prediction is saved in `sh/sample_pred/best_pred.txt`.
 
 
 **TODO** For the full model described in the paper, it will be released soon.
@@ -219,6 +219,7 @@ Begin training for epoch 2
 ...
 ```
 
+We provide our pretrained models in [here](https://drive.google.com/file/d/1noVIsPkMp8lH_b86nW4oKpVjFJCHl1FV/view?usp=sharing) for replicating the above results.
 
 # Citation
 If you find our code and dataset useful in your research, please consider citing our paper:
