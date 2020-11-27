@@ -66,9 +66,12 @@ pip install nltk h5py
 ```
 
 ## Data
+We crawl **53,701** image-text tweets with user-annotated hashtags from Twitter from January to June 2019.\
 For raw tweet image data, please find it from [here](https://drive.google.com/file/d/1WsDldDXsnkzT7qfTsu2pW4PMeg6zZhN_/view?usp=sharing).
 The tweet text data is stored in `data`, where we provide three variants: without OCR, with OCR appended at the end of post, a tiny data (50 instances) for fast running the code.
 For the `tw_mm_s1_ocr` with VGG and attribute features, please download it from [here](https://drive.google.com/file/d/1RETR9rljL2vLZa3EVKFWeOEOmuF0VVC7/view?usp=sharing) and unzip into `data/tw_mm_s1_ocr`.
+
+![Data statistics](data.JPG)
 
 ## Prepare image and text features
 Please find it from `ext_feats`, where we provide codes to extract VGG or BUTD visual features (`infer_visual_feat`), image attribute features (`infer_attribute`), and OCR texts (`infer_OCR`) from the image, and extract Glove embedding (`prepare_tw_glove_emb.py`) and BERT features (`infer_bert`) from the text.
